@@ -15,23 +15,23 @@
 
 import random
 
-N = int(input('Enter the bush number: '))
-print(A := [random.randint(0,10) for _ in range(N)])
+num_n = int(input('Enter the bush number: '))
+print(list_a := [random.randint(0,10) for _ in range(num_n)])
 
 # var#1
 # max_harv = 0
-# for i in range(len(A)):
-#     if A[0] + A[1] + A[2] > max_harv:
-#         max_harv = A[0] + A[1] + A[2]
-#     A.append(A.pop(0))
-#     # print(A)
+# for i in range(len(list_a)):
+#     if list_a[0] + list_a[1] + list_a[2] > max_harv:
+#         max_harv = list_a[0] + list_a[1] + list_a[2]
+#     list_a.append(list_a.pop(0))
+#     # print(list_a)
 # print(max_harv)
 
 # var#2
 # max_harv = 0
-# for i in range(len(A)-1):
-#     if A[i - 1] + A[i] + A[i + 1] > max_harv:
-#         max_harv = A[i - 1] + A[i] + A[i + 1]
-# if A[len(A) - 2] + A[len(A) - 1] + A[0] > max_harv:
-#     max_harv = A[len(A) - 2] + A[len(A) - 1] + A[0]
+# for i in range(len(list_a)-1):
+#     if list_a[i - 1] + list_a[i] + list_a[i + 1] > max_harv:
+#         max_harv = list_a[i - 1] + list_a[i] + list_a[i + 1]
+# if list_a[len(list_a) - 2] + list_a[len(list_a) - 1] + list_a[0] > max_harv:
+#     max_harv = list_a[len(list_a) - 2] + list_a[len(list_a) - 1] + list_a[0]
 # print(max_harv)
