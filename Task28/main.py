@@ -5,10 +5,20 @@
 import random as rnd
 
 
-def summa(a: int, b: int) -> int:
-    if a == 0:
-        return 0
-    return 1 + summa(a - 1, b) if b == 0 else 1 + summa(b, a - 1)
+# def summa(a: int, b: int) -> int:
+#     if a == 0:
+#         return 0
+#     return 1 + summa(a - 1, b) if b == 0 else 1 + summa(b, a - 1)
+
+# def summa(a: int, b: int):
+#     if b == 0:
+#         return a
+#     return summa(a + 1, b - 1)
+
+def summa(a: int, b: int):
+    if b == 0:
+        return a
+    return 1+ summa(a, b - 1)
 
 
 num_a = rnd.randint(0, 10)
